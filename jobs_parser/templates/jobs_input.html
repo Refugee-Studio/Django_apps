@@ -1,0 +1,11 @@
+{% block content %}
+
+<form method='POST' action="{% url 'jobs_parser' %}">
+  {% csrf_token %}
+  What kind of job are you looking for?<br>
+  <input type="text" name="job_input"><br>
+  In what location?<br>
+  <input type="text" name="location_input">
+  <p><input type="submit" value="Submit"</p>
+</form>
+{% endblock %}

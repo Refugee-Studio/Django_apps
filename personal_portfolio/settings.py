@@ -25,7 +25,7 @@ SECRET_KEY = 'hjr=r_rd_oq4-#%)jy(nue)2)1#3b*mo(ee2=o1_t_0x7zg!y_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pashuntiytest.herokuapp.com']
 
 
 # Application definition

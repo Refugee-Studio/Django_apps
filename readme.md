@@ -19,9 +19,14 @@
 
 ## Django basics
 
+### Install virtual environment:
+python - m pip install virtualenvwrapper-win
+
+### Create a virtual environment for your project
+mkvirtualenv myproject
+
 ### Activate virtual environment:
-C:\Users\User\Documents\MEGA\!Projects\Django_apps\venv\Scripts
-activate
+workon myproject
 
 ### Create project:
 django-admin startproject personal_portfolio

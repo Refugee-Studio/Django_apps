@@ -8,7 +8,7 @@
 ## Routing
 - Add app URLS - app/urls.py
 - Add project URLS - project/urls.py
-##Front-end
+## Front-end
 - Add Templates - app/templates/something.html
 - Add static files - app/static
 ## Administration

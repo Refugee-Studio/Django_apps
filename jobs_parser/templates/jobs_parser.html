@@ -3,10 +3,11 @@
 {% block content %}
 
 {% for instance in object_list %}
-    <p>Position: {{ instance.Position }}</p>
-    <p>Company: {{ instance.Company }}</p>
-    <p>Salary: {{ instance.Salary }}</p>
-    <p>URL: <a href='{{ instance.get_absolute_url }}'>{{ instance.URL }}</a></p>
+    <p><b>Position:</b> {{ instance.Position }}</p>
+    <p><b>Company:</b> {{ instance.Company }}</p>
+    <p><b>Salary:</b> {{ instance.Salary }}</p>
+    <p><b>URL:</b> <a href='{{ instance.get_absolute_url }}'>{{ instance.URL }}</a></p>
+    <p>================================</p>
 {% endfor %}
 
 {% endblock %}

@@ -1,5 +1,7 @@
+# Django_apps
+
 # How to develope\deploy application
-##Back-end
+## Back-end
 - Add app to your INSTALLED_APPS - project/settings.py
 - Create models - app/models.py
 - Migrate - python manage.py migrate
@@ -15,27 +17,28 @@
 - Add superuser if needed - python manage.py createsuperuser
 - Add class to admin interface - app/admin.py
 
-##Activate virtual environment:
+
+### Activate virtual environment:
 C:\Users\User\Documents\MEGA\!Projects\Django_apps\venv\Scripts
 activate
 
-##Create project:
+### Create project:
 django-admin startproject personal_portfolio
 
-## Create application:
+### Create application:
 python manage.py startapp app_name
 
-##Run virtual server:
+### Run virtual server:
 python manage.py runserver
 
-##Create superuser
+### Create superuser
 python manage.py createsuperuser
 
-##Create a migration file
+### Create a migration file
 python manage.py makemigrations projects
-##Apply the migrations set out in the migrations file and create your database
+### Apply the migrations set out in the migrations file and create your database
 python manage.py migrate projects
 
-##Get access to Django shell
+### Get access to Django shell
 python manage.py shell
-# Django_apps
+

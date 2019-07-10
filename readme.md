@@ -1,4 +1,4 @@
-# Django_apps
+# Django applications
 
 # How to develope\deploy application
 ## Back-end
@@ -17,6 +17,7 @@
 - Add superuser if needed - python manage.py createsuperuser
 - Add class to admin interface - app/admin.py
 
+## Django basics
 
 ### Activate virtual environment:
 C:\Users\User\Documents\MEGA\!Projects\Django_apps\venv\Scripts

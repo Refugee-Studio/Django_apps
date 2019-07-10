@@ -2,26 +2,11 @@
 
 {% block content %}
 
-<p>{{job_input}}, {{location_input}}</p>
-
-
-<table style="width: 800px;" border="1px solid black;">
-  <tr>
-    <th style="text-align: center; width: 200px;">Position</th>
-    <th style="text-align: center; width: 200px;">Company</th>
-    <th style="text-align: center; width: 200px;">Salary</th>
-    <th style="text-align: center; width: 200px;">URL</th>
-  </tr>
-</table>
 {% for instance in object_list %}
-<table style="width: 800px;" border="1px solid black;" >
-  <tr>
-    <td style="text-align: center; width: 200px;">{{ instance.Position }}</td>
-    <td style="text-align: center; width: 200px;">{{ instance.Company }}</td>
-    <td style="text-align: center; width: 200px;">{{ instance.Salary }}</td>
-    <td style="text-align: center; width: 200px;"><a href='{{ instance.get_absolute_url }}'>{{ instance.URL }}</a></td>
-  </tr>
-</table>
+    <p>Position: {{ instance.Position }}</p>
+    <p>Company: {{ instance.Company }}</p>
+    <p>Salary: {{ instance.Salary }}</p>
+    <p>URL: <a href='{{ instance.get_absolute_url }}'>{{ instance.URL }}</a></p>
 {% endfor %}
 
 {% endblock %}

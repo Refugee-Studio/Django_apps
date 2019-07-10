@@ -29,7 +29,7 @@ mkvirtualenv myproject
 workon myproject
 
 ### Create project:
-django-admin startproject personal_portfolio
+django-admin startproject project_name
 
 ### Create application:
 python manage.py startapp app_name

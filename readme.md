@@ -1,3 +1,18 @@
+# Job parser applications
+
+My first ever working app. For now (2019/07) it pars specific jobs in specific locations (depend on user input) on indeed website and show specific feathers of jobs posting (position, company, salary and url).
+
+Now working on refactoring the code according to industry standards. Need to implement:
+- django orm models for inserting data to database
+- django forms for collecting input from user
+- django forms validators for clear input data
+- python url constructor for construct urls less manually
+
+
+Next other job postings websites will be added.
+
+---
+
 # Django applications
 
 # How to develope\deploy application
@@ -27,6 +42,7 @@ mkvirtualenv myproject
 
 ### Activate virtual environment:
 workon myproject
+- django_apps for that specific app
 
 ### Create project:
 django-admin startproject project_name
@@ -48,3 +64,30 @@ python manage.py migrate projects
 ### Get access to Django shell
 python manage.py shell
 
+---
+# Django on heroku
+
+### Procfile file
+**Important** to name your project, not an app!
+```
+web: gunicorn project_name.wsgi
+```
+### runtime.txt
+Version of the python
+```
+python-3.6.8
+```
+
+### requirements.txt
+Requirements files are used to hold the result from pip freeze for the purpose of achieving repeatable installations. In this case, your requirement file contains a pinned version of everything that was installed when pip freeze was run.
+```
+pip install -r requirements.txt
+pip freeze > requirements.txt
+```
+
+### ALLOWED_HOSTS
+add host of your app on heroku to: your_project/settings.py
+
+```python
+ALLOWED_HOSTS = ['your_heroku_app.herokuapp.com']
+```

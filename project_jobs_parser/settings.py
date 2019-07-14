@@ -25,7 +25,7 @@ SECRET_KEY = '+vgw$@^!krf2=@2u=h6qg%-!q4_p7cf2o_xzjhhd498hh7#!ad'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pashuntiytest.herokuapp.com']
+ALLOWED_HOSTS = ['pashuntiytest.herokuapp.com',]
 # add to ALLOWED_HOSTS while deploy on heroku: pashuntiytest.herokuapp.com
 
 # Application definition

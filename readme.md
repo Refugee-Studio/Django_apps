@@ -34,35 +34,44 @@ Next other job postings websites will be added.
 ## Django basics
 
 ### Install virtual environment:
+```
 python - m pip install virtualenvwrapper-win
+```
 
 ### Create a virtual environment for your project
-mkvirtualenv myproject
+```mkvirtualenv myproject
+```
 
 ### Activate virtual environment:
-workon myproject
+```workon myproject
+```
 - django_apps for that specific app
 
 ### Create project:
-django-admin startproject project_name
+```django-admin startproject project_name
+```
 
 ### Create application:
-python manage.py startapp app_name
+```python manage.py startapp app_name
+```
 
 ### Run virtual server:
-python manage.py runserver
+```python manage.py runserver
+```
 
 ### Create superuser
-python manage.py createsuperuser
+```python manage.py createsuperuser
+```
 
 ### Create a migration file
-python manage.py makemigrations projects
+```python manage.py makemigrations projects
+```
 ### Apply the migrations set out in the migrations file and create your database
-python manage.py migrate projects
-
+```python manage.py migrate projects
+```
 ### Get access to Django shell
-python manage.py shell
-
+```python manage.py shell
+```
 ---
 # Django on heroku
 

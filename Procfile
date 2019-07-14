@@ -1,1 +1,1 @@
-web: gunicorn personal_portfolio.wsgi
+web: gunicorn project_jobs_parser.wsgi

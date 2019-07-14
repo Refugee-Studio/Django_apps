@@ -1,1 +1,1 @@
-web: gunicorn app_jobs_parser.wsgi
+web: gunicorn project_jobs_parser.wsgi

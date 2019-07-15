@@ -26,15 +26,18 @@ def jobs_parser(request):
             pass
         else:
             form = input_form()
-        job_input = (form['position'].value()+'+')
-        location_input = (form['location'].value()+'+')
+        job_input = form['position'].value()
+        location_input = form['location'].value()
 
-        pages = [10]
+        indeed_url = 'https://www.indeed.com/jobs'
+        pages = [10, 20]
 
         # Parsing indeed
         for page in pages:
             # Constructing url
-            source = requests.get('https://www.indeed.com/jobs?q=' + job_input+'&l=' + location_input + '&start{}'.format(page)).text
+            input_dict = {'q': job_input, '&l': location_input, '&start': page }
+            source = requests.get(indeed_url, params=input_dict).text
+            #source = requests.get('https://www.indeed.com/jobs?q=' + job_input+'&l=' + location_input + '&start{}'.format(page)).text
             soup = BeautifulSoup(source, 'lxml')
 
             for jobs in soup.find_all(class_='result'):

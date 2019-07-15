@@ -30,7 +30,7 @@ def jobs_parser(request):
         location_input = form['location'].value()
 
         indeed_url = 'https://www.indeed.com/jobs'
-        pages = [10, 20]
+        pages = [10]
 
         # Parsing indeed
         for page in pages:

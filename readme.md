@@ -1,6 +1,6 @@
 # Job parser applications
 
-My first ever working app, this monument will stay here forever. It pars specific jobs in specific locations (depend on user input) on indeed website and show specific feathers of jobs posting (position, company, salary and url).
+My first ever working app, this monument will stay here forever. It scrape indeed website, looking for specific jobs in specific locations (depend on user input) and show feathers of jobs posting (position, company, salary and url on job posting).
 
 Now working on refactoring the code according to industry standards. Need to implement:
 - django forms for collecting input from user

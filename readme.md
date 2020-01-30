@@ -32,18 +32,31 @@ Now working on refactoring the code according to industry standards. Need to imp
 
 ### Install virtual environment:
 ```
+WIN:
 python - m pip install virtualenvwrapper-win
+
+MAC:
+sudo pip install virtualenv
 ```
 
 ### Create a virtual environment for your project
 ```
+WIN:
 mkvirtualenv myproject
+
+MAC:
+virtualenv myproject
 ```
 
 ### Activate virtual environment:
 ```
+WIN:
 workon myproject
+
+MAC:
+source bin/activate
 ```
+
 - django_apps for that specific app
 
 ### Create project:

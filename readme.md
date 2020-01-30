@@ -57,6 +57,11 @@ MAC:
 source bin/activate
 ```
 
+### Deactivate virtual environment:
+```
+deactivate
+```
+
 - django_apps for that specific app
 
 ### Create project:
